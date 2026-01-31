@@ -1,0 +1,118 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+/* Redefine vars for safety, though they should cascade if imported properly. 
+   Ideally, we should rely on styling logic from style.css, but this ensures Page 2 looks good standalone too. */
+:root {
+  --primary-bg: #0f172a;
+  --secondary-bg: #1e293b;
+  --accent-color: #6366f1;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --gradient-main: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --input-bg: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+/* About Section */
+.about-section {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-section p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Form Section */
+.form-section {
+    padding: 4rem 0;
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.1), transparent 70%);
+}
+
+.form-section h2 {
+    margin-bottom: 2rem;
+}
+
+.form-section form {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form Controls */
+.form-control {
+    background-color: var(--input-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+    color: var(--text-main);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: rgba(148, 163, 184, 0.5);
+}
+
+/* Button override */
+.btn-primary {
+    background: var(--gradient-main);
+    border: none;
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-top: 1rem;
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+}
+
+footer {
+    border-top-color: var(--glass-border) !important;
+}
+
+/* Mobile Tweak */
+@media (max-width: 768px) {
+    .form-section form {
+        padding: 2rem 1.5rem;
+    }
+}
