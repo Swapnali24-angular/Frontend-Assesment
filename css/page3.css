@@ -5,7 +5,7 @@
 
 .services-header h1 {
     font-size: 3.5rem;
-    background: linear-gradient(to right, #fff, #94a3b8);
+    background: linear-gradient(to right, #1e293b, #475569);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -19,9 +19,8 @@
 }
 
 .service-card {
-    background: var(--glass-bg);
-    backdrop-filter: blur(12px);
-    border: 1px solid var(--glass-border);
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
     padding: 2.5rem;
     border-radius: 20px;
     height: 100%;
@@ -33,8 +32,8 @@
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(99, 102, 241, 0.2);
-    border-color: rgba(99, 102, 241, 0.5);
+    box-shadow: var(--card-shadow);
+    border-color: var(--accent-color);
 }
 
 .service-card::before {

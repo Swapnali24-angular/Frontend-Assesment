@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 
 :root {
-  --primary-bg: #0f172a;
-  --secondary-bg: #1e293b;
-  --accent-color: #6366f1;
-  --accent-glow: #818cf8;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --glass-bg: rgba(15, 23, 42, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --gradient-main: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --primary-bg: #f8fafc;
+  --secondary-bg: #ffffff;
+  --accent-color: #2563eb;
+  --accent-glow: #60a5fa;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --glass-bg: rgba(255, 255, 255, 0.9);
+  --glass-border: rgba(226, 232, 240, 1);
+  --gradient-main: linear-gradient(135deg, #2563eb 0%, #0284c7 100%);
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 }
 
 .navbar {
-  background-color: var(--glass-bg) !important;
+  background-color: rgba(255, 255, 255, 0.8) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--glass-border);
@@ -62,7 +63,7 @@ body {
 }
 
 .navbar.navbar-scrolled {
-  background-color: rgba(15, 23, 42, 0.95) !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   padding: 0.5rem 0;
 }
@@ -86,8 +87,8 @@ body {
 .hero-section {
   min-height: 85vh;
   position: relative;
-  background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent 40%),
-              radial-gradient(circle at bottom left, rgba(168, 85, 247, 0.15), transparent 40%);
+  background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.05), transparent 40%),
+              radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.05), transparent 40%);
   display: flex;
   align-items: center;
   text-align: center;
@@ -100,7 +101,7 @@ body {
   line-height: 1.1;
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
-  background: linear-gradient(to right, #fff, #94a3b8);
+  background: linear-gradient(to right, #1e293b, #475569);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
